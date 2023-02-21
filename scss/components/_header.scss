@@ -1,0 +1,52 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+
+header{
+    background-color: $primary;
+
+}
+
+.container-fluid{
+
+        .navbar-brand{
+            margin-left: 15%;
+            img{
+                object-fit: contain;
+                @include width-height(150px, 150px);
+            }
+        }
+        & .navbar-toggler{
+            color: $secondary;
+        }
+        & .navbar-toggler-icon{
+            color: $secondary;
+            background-color: $secondary;
+        }
+    }
+
+.navbar-collapse{
+
+        .navbar-nav{
+            padding: 30px;
+            align-items: center;
+            
+            .nav-link{
+                color: $text-color;
+                padding: 18px;
+                font-size: 18px;
+                font-family: $font-principal;
+                background-image: linear-gradient($secondary, $secondary);
+                background-position: 0% 75%;
+                background-repeat: no-repeat;
+                background-size: 0% 0.4px;
+                transition: all 3s ease;
+                &:hover{
+                    color:$secondary;
+            }
+                &:hover, &:focus{
+                    background-size: 100% 1.5px;
+            }
+            }
+        }
+    }

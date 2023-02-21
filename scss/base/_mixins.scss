@@ -1,0 +1,17 @@
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin width-height($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin borderradius($radius, $wradius, $mradius){
+    border-radius: $radius;
+    -webkit-border-radius: $wradius;
+    -moz-border-radius: $mradius;
+}
